@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>vn.myclass</groupId>
+    <artifactId>toic-online</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>toic-web-logic</module>
+        <module>toic-web</module>
+        <module>toic-core-dto</module>
+        <module>toic-core-data</module>
+        <module>toic-core-dao</module>
+        <module>toic-core-dao-impl</module>
+        <module>toic-core-service</module>
+        <module>toic-core-service-impl</module>
+        <module>toic-core-untils</module>
+    </modules>
+    <properties>
+        <jsp.api.version>2.0</jsp.api.version>
+        <javax.servlet.api>4.0.0</javax.servlet.api>
+        <mysql.connector.java.version>5.1.42</mysql.connector.java.version>
+        <hibernate.core.version>5.2.12.Final</hibernate.core.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>${jsp.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet.api}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.core.version}</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+</project>
