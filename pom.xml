@@ -18,6 +18,8 @@
         <module>toic-core-service</module>
         <module>toic-core-service-impl</module>
         <module>toic-core-untils</module>
+        <module>toic-core-entity</module>
+        <module>toic-core-common</module>
     </modules>
     <properties>
         <jsp.api.version>2.0</jsp.api.version>
